@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        app:title="@string/app_name"
+        app:subtitleTextColor="@color/red"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/openMenu"
+        style="@style/openMenu"
+        android:textAlignment="center"
+        />
+    <!--<com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/nav_menu" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/openMenu"
+        app:layout_constraintVertical_bias=".0"
+        tools:layout_editor_absoluteX="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/kremlin"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/cimage0"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:contentDescription="@string/kremlin"
+                    android:src="@drawable/kremlin" />
+
+                <TextView
+                    android:id="@+id/rating0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="290dp"
+                    android:layout_y="229dp"
+                    android:text="@string/rating_kremlin"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/description0"
+                    android:layout_width="match_parent"
+                    android:layout_height="137dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/kremlin_description"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonFavorite0"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="199dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/add_to_favorite"
+                    android:onClick="addToFavorite"/>
+
+                <!--<Button
+                    android:id="@+id/buttonWay0"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="0dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/build_way" />-->
+            </AbsoluteLayout>
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/big_theater"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:src="@drawable/big_theater" />
+
+                <TextView
+                    android:id="@+id/rating1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="290dp"
+                    android:layout_y="229dp"
+                    android:text="@string/rating_kremlin"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="136dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/theater_description"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonFavorite1"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="199dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/add_to_favorite"
+                    android:onClick="addToFavorite"/>
+
+                <!--<Button
+                    android:id="@+id/buttonWay1"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="0dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/build_way" />-->
+
+
+            </AbsoluteLayout>
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:layout_x="0dp"
+                    android:layout_y="229dp"
+                    android:gravity="center"
+                    android:text="@string/zaryadie"
+                    android:textSize="30sp" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="229dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginTop="143dp"
+                    android:layout_marginEnd="93dp"
+                    android:layout_x="0dp"
+                    android:layout_y="0dp"
+                    android:src="@drawable/zaryadie" />
+
+                <TextView
+                    android:id="@+id/rating2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="44dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="290dp"
+                    android:layout_y="229dp"
+                    android:text="@string/rating_kremlin"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="176dp"
+                    android:layout_marginStart="43dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginEnd="44dp"
+                    android:layout_x="0dp"
+                    android:layout_y="269dp"
+                    android:text="@string/zaryadie_description"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/buttonFavorite2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="199dp"
+                    android:layout_y="445dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:onClick="addToFavorite"
+                    android:text="@string/add_to_favorite" />
+
+                <!--<Button
+                    android:id="@+id/buttonWay2"
+                    android:layout_width="181dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="232dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_x="0dp"
+                    android:layout_y="405dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="@string/build_way" />-->
+            </AbsoluteLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

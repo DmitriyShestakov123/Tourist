@@ -1,0 +1,17 @@
+<resources>
+    <string name="kremlin">Кремль</string>
+    <string name="app_name">Tourist</string>
+    <string name="home">Главная</string>
+    <string name="profile">Профиль</string>
+    <string name="map">Карта</string>
+    <string name="kremlin_description">Московский Кремль — крепость в центре Москвы и древнейшая её часть, главный общественно-политический и историко-художественный комплекс города</string>
+    <string name="rating_kremlin">4,9 ⭐</string>
+    <string name="add_to_favorite">Добавить в избранное</string>
+    <string name="build_way">Построить маршрут</string>
+    <string name="big_theater">Большой театр</string>
+    <string name="theater_description">Федеральное государственное бюджетное учреждение культуры Большой театр — один из крупнейших в России и один из самых значительных в мире театров оперы и балета.</string>
+    <string name="zaryadie">Парк Зарядье</string>
+    <string name="zaryadie_description">Общественное пространство Москвы, городской культурно-просветительский центр «Зарядье» — объект в одноимённом историческом районе Москвы, созданный на месте снесённой в 2006 году гостиницы «Россия»</string>
+    <string name="delete_all">Убрать все</string>
+
+</resources>
